@@ -1,0 +1,22 @@
+{
+  "experiment": "M2 deterministic synthetic policy evaluation",
+  "model": null,
+  "model_version": null,
+  "temperature": null,
+  "sampling_parameters": "Not applicable: no LLM is called",
+  "knapsack_budget": 350,
+  "queries": 10,
+  "repetitions_per_query": 30,
+  "baseline_tokens_total": 8650,
+  "optimized_tokens_total": 3090,
+  "token_reduction_percent": 64.2775,
+  "baseline_accuracy_proxy": 1,
+  "optimized_accuracy_proxy": 1,
+  "baseline_completeness": 1.0,
+  "optimized_completeness": 1.0,
+  "selection_consistency": 1.0,
+  "decision_consistency": 1.0,
+  "mean_knapsack_time_ms": 0.238925,
+  "std_knapsack_time_ms": 0.03224,
+  "important_note": "Accuracy is an oracle coverage proxy, not measured LLM accuracy. Tokens are synthetic costs. Runtime measures only Knapsack, not model inference."
+}

@@ -1,0 +1,11 @@
+case_id,query,reference_answer,required_rules,selected_rules,baseline_tokens,optimized_tokens,reduction_percent,baseline_accuracy_proxy,optimized_accuracy_proxy,baseline_completeness,optimized_completeness,optimized_prediction,selection_consistency,decision_consistency
+C01,Return unused item after 10 days with receipt,APPROVE,Return window; Receipt requirement,Return window; Receipt requirement; Final-sale exception,865,300,65.3179,1,1,1.0,1.0,APPROVE,1.0,1.0
+C02,Return unused item after 45 days with receipt,REJECT,Return window,Return window; Receipt requirement; Final-sale exception,865,300,65.3179,1,1,1.0,1.0,REJECT,1.0,1.0
+C03,Return final-sale item with no defect,REJECT,Final-sale exception,Return window; Receipt requirement; Final-sale exception,865,300,65.3179,1,1,1.0,1.0,REJECT,1.0,1.0
+C04,Return damaged final-sale item,REVIEW,Final-sale exception; Damaged product,Return window; Final-sale exception; Damaged product,865,310,64.1618,1,1,1.0,1.0,REVIEW,1.0,1.0
+C05,Return item without a receipt,REVIEW,Receipt requirement,Return window; Receipt requirement; Final-sale exception,865,300,65.3179,1,1,1.0,1.0,REVIEW,1.0,1.0
+C06,Ask for original-payment refund on eligible return,APPROVE,Return window; Refund method,Return window; Receipt requirement; Refund method,865,310,64.1618,1,1,1.0,1.0,APPROVE,1.0,1.0
+C07,Return item with damaged shipping packaging,REVIEW,Shipping conditions; Damaged product,Return window; Damaged product; Shipping conditions,865,340,60.6936,1,1,1.0,1.0,REVIEW,1.0,1.0
+C08,Request repair of defective product under warranty,REVIEW,Warranty policy; Damaged product,Return window; Damaged product; Warranty policy,865,350,59.5376,1,1,1.0,1.0,REVIEW,1.0,1.0
+C09,Exchange unused item within return window,APPROVE,Exchange procedure; Return window,Return window; Receipt requirement; Exchange procedure,865,295,65.896,1,1,1.0,1.0,APPROVE,1.0,1.0
+C10,Exchange final-sale item that arrived damaged,REVIEW,Exchange procedure; Final-sale exception; Damaged product,Final-sale exception; Damaged product; Exchange procedure,865,285,67.052,1,1,1.0,1.0,REVIEW,1.0,1.0
